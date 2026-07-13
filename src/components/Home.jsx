@@ -45,12 +45,12 @@ function Home() {
           </div>
         </div>
 
-        <div className="profile-image">
-          <img
-            src="/profile.jpg"
-            alt="Profile"
-          />
-        </div>
+       <div className="profile-image">
+  <img
+    src={`${import.meta.env.BASE_URL}profile.jpg`}
+    alt="Profile"
+  />
+</div>
 
       </div>
     </section>
