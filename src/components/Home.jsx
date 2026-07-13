@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 function Home() {
 const downloadResume = () => {
   const link = document.createElement("a");
-  link.href = `${import.meta.env.BASE_URL}Resume_Poovetha_R.pdf`;
-  link.download = "Resume_Poovetha_R.pdf";
+
+  link.href = `${window.location.origin}/Portfolio/Resume_Poovetha_R.pdf`;
+
+  link.setAttribute("download", "Resume_Poovetha_R.pdf");
+
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
