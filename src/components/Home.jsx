@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 function Home() {
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/Resume_Poovetha_R.pdf";
-    link.download = "Resume_Poovetha_R.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}Resume_Poovetha_R.pdf`;
+  link.download = "Resume_Poovetha_R.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <section id="home" className="home">
